@@ -1,0 +1,199 @@
+{
+    "tables": [
+        {
+            "number": 1,
+            "seated": 10,
+            "capacity": 10,
+            "guests": [
+                "Iulian Capota",
+                "Valentina Capota",
+                "Gheorghe Bucur",
+                "Ancuta Bucur",
+                "Alexandru Bucur",
+                "Larisa Bucur",
+                "Victor Bucur",
+                "Horia Bucur",
+                "Mihaela Sili",
+                "Laurentiu Sili"
+            ]
+        },
+        {
+            "number": 2,
+            "seated": 12,
+            "capacity": 12,
+            "guests": [
+                "Ionica Popescu",
+                "Radu Popescu",
+                "Stefan Popescu",
+                "Iuliana Cohea",
+                "George Cohea",
+                "Tudor Cohea",
+                "Ionela Ciobanu",
+                "Gigi Balmau",
+                "Dana Balmau",
+                "Nick Ingrisani",
+                "Oana Balmau",
+                "Rumi Ingrisani"
+            ]
+        },
+        {
+            "number": 3,
+            "seated": 13,
+            "capacity": 14,
+            "guests": [
+                "Crissy Hilder",
+                "Alex Dumitrescu",
+                "Alex Niculae",
+                "Mihaela Furtuna",
+                "Ioana Bob",
+                "Eran Peer",
+                "Anca Capota",
+                "Stefan Manciulescu",
+                "Radu Nasoi",
+                "Monica Nasoi",
+                "Andreea Iliescu",
+                "Tudor Hostina",
+                "Isabella Angheluta"
+            ]
+        },
+        {
+            "number": 4,
+            "seated": 11,
+            "capacity": 12,
+            "guests": [
+                "Paul Osiceanu",
+                "Andreea Osiceanu",
+                "Ionut Cioboata",
+                "Iunia Burlan",
+                "Ioana Gherman",
+                "Alexandru Geoana",
+                "Razvan Mirea",
+                "Anca Radu",
+                "Andreea Moise",
+                "Vlad Moise",
+                "Daniel Pircalabu"
+            ]
+        },
+        {
+            "number": 5,
+            "seated": 13,
+            "capacity": 14,
+            "guests": [
+                "Dragos Boiciuc",
+                "Laura Stancu",
+                "Flavi Caruntu",
+                "Simona Caruntu",
+                "Alex Calinescu",
+                "Mihai Mares",
+                "Adi Neacsu",
+                "Laura Neacsu",
+                "Alex Rebreanu",
+                "Cristina Rebreanu",
+                "Bogdan Toma",
+                "Ada Toma",
+                "Amelia Toma"
+            ]
+        },
+        {
+            "number": 6,
+            "seated": 9,
+            "capacity": 10,
+            "guests": [
+                "Calin Andrei",
+                "Andreea Andrei",
+                "Dumitru Sili",
+                "Laura Sili",
+                "Dan Dinu",
+                "Lavinia Antone",
+                "Andrei Iosza",
+                "Ama Iosza",
+                "Ica Ungureanu"
+            ]
+        },
+        {
+            "number": 7,
+            "seated": 10,
+            "capacity": 10,
+            "guests": [
+                "Yannick Putzeys",
+                "Camelia Dan",
+                "Adriana Barbu",
+                "Vlad Barbu",
+                "Andra Popescu",
+                "Andreea Huiban",
+                "Daniel Strachinariu",
+                "Oana Strachinariu",
+                "Dimi Strachinariu",
+                "Cristina Isaila"
+            ]
+        },
+        {
+            "number": 8,
+            "seated": 11,
+            "capacity": 12,
+            "guests": [
+                "Teodora Baciu",
+                "Andrei Cristea",
+                "Andrei Maghear",
+                "Daniela Tinca",
+                "Cosmin Postolica",
+                "Andreea Postolica",
+                "Radu Bucur",
+                "Mariana Bucur",
+                "Mihai Iancu",
+                "Ninett Panfir",
+                "Emma Iancu"
+            ]
+        },
+        {
+            "number": 9,
+            "seated": 12,
+            "capacity": 12,
+            "guests": [
+                "Carla Martin",
+                "Larisa Povarna",
+                "Madalina Pelcea",
+                "Ionut Pelcea",
+                "Mihai Gavan",
+                "Andreea Caluseri",
+                "Alex Zaharia",
+                "Antonia Petrescu",
+                "Alin Mihalea",
+                "Roxana Cononov",
+                "Cristian Ivan",
+                "Victor Corcodel"
+            ]
+        },
+        {
+            "number": 10,
+            "seated": 10,
+            "capacity": 10,
+            "guests": [
+                "Florin Sunel",
+                "Simona Sunel",
+                "Mircea Neagovici-Negoescu",
+                "Daciana Neagovici-Negoescu",
+                "Dragos Bobolea",
+                "Ana Bobolea",
+                "Adrian Petre",
+                "Iustina Punga",
+                "Horatiu Palade",
+                "Cristina Palade"
+            ]
+        },
+        {
+            "number": 11,
+            "seated": 7,
+            "capacity": 8,
+            "guests": [
+                "Kostas Vasilakos",
+                "Sara Usic",
+                "Teodor Cataniciu",
+                "Andrea Stehrer",
+                "Neri Friedlander",
+                "Alyssa Friedlander",
+                "Ella Claire Friedlander"
+            ]
+        }
+    ]
+}
