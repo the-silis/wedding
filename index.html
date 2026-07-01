@@ -508,7 +508,24 @@
             <div class="flex-grow border-t border-neutral-200/60"></div>
         </div>
 
-        <!-- Section 5: Seating Arrangements -->
+        <!-- Section 5: Seating Arrangements — temporarily showing a minimal "Coming Soon" placeholder. -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-0">
+            <div class="md:col-span-1 pr-4 py-2">
+                <h2 class="text-xs uppercase tracking-[0.25em] text-neutral-400 font-semibold md:sticky md:top-12">
+                    <span class="lang-en">Seating</span>
+                    <span class="lang-ro hidden">Locuri la Mese</span>
+                </h2>
+            </div>
+            <div class="md:col-span-3 border-l border-neutral-200/60 pl-6 md:pl-12 py-2">
+                <p class="font-serif text-lg md:text-xl font-light text-neutral-400 leading-relaxed italic">
+                    <span class="lang-en">Coming soon</span>
+                    <span class="lang-ro hidden">În curând</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Original seating arrangements section — temporarily disabled, preserved for easy restoration.
+             (Inner HTML comment delimiters below were changed to [ ... ] so this outer comment stays valid.)
         <section class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-0">
             <div class="md:col-span-1 pr-4 py-2">
                 <h2 class="text-xs uppercase tracking-[0.25em] text-neutral-400 font-semibold md:sticky md:top-12">
@@ -524,7 +541,7 @@
                         pentru a descoperi masa ta.</span>
                 </p>
 
-                <!-- Search block -->
+                [ Search block ]
                 <div class="space-y-3 max-w-md">
                     <div class="relative">
                         <input type="text" id="seating-search" oninput="handleSearch()"
@@ -539,17 +556,18 @@
                         </div>
                     </div>
 
-                    <!-- Real-time match feedback counter -->
+                    [ Real-time match feedback counter ]
                     <div id="search-feedback" class="text-xs text-neutral-400 font-sans tracking-wide italic hidden">
                     </div>
                 </div>
 
-                <!-- Interactive Table Map Grid -->
+                [ Interactive Table Map Grid ]
                 <div id="tables-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-                    <!-- Cards are dynamically computed and rendered in client-side JS -->
+                    [ Cards are dynamically computed and rendered in client-side JS ]
                 </div>
             </div>
         </section>
+        -->
 
         <!-- Footer -->
         <section class="border-t border-neutral-200/60 pt-16 pb-8 text-center space-y-6">
@@ -666,10 +684,10 @@
                 if (searchInput) searchInput.placeholder = "Scrie numele tău...";
             }
 
-            // Refresh table map rendering in target language
-            if (typeof renderTables === 'function') {
-                const searchVal = document.getElementById('seating-search').value;
-                renderTables(searchVal);
+            // Refresh table map rendering in target language (skips gracefully when seating is hidden)
+            const seatingSearch = document.getElementById('seating-search');
+            if (seatingSearch && typeof renderTables === 'function') {
+                renderTables(seatingSearch.value);
             }
         }
 
@@ -733,6 +751,8 @@
         function renderTables(searchQuery = '') {
             const grid = document.getElementById('tables-grid');
             const feedback = document.getElementById('search-feedback');
+            // Seating grid may be absent (e.g. section temporarily replaced by a "Coming Soon" placeholder).
+            if (!grid) return;
             grid.innerHTML = '';
 
             let matchCount = 0;
